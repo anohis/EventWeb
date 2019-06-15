@@ -1,30 +1,19 @@
-# project
+# EventWeb
+練習寫網頁，有緣再改
+用到Vue+Express，參考https://blog.csdn.net/u012414590/article/details/79043757
+node_modules資料夾很大所以就不上傳了  
 
-> A Vue.js project
 
-## Build Setup
-
-``` bash
-# install dependencies
+# 基本環境
+npm install -g vue-cli
+vue init webpack EventWeb
+cd EventWeb
 npm install
+npm install express --save
 
-# serve with hot reload at localhost:8080
-npm run dev
+# 其他
+DataPicker拿vue2-datepicker修改
 
-# build for production with minification
+# 打包
 npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
-
-# run unit tests
-npm run unit
-
-# run e2e tests
-npm run e2e
-
-# run all tests
-npm test
-```
-
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+node server/app.js
