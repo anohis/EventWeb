@@ -1,0 +1,111 @@
+@font-face 
+{
+	font-family: ProximaNova;
+	src: local("Proxima Nova");
+}
+
+@mixin Font($size, $color)
+{
+	font-size: $size;
+	font-weight: 600;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: normal;
+	letter-spacing: normal;
+	text-align: center-left;
+	color: $color;
+}
+
+@mixin Fontawesome($size, $color)
+{
+	@include Font($size, $color);
+}
+
+@mixin ProximaNovaFont($size, $color)
+{
+	font-family: ProximaNova;
+	@include Font($size, $color);
+}
+
+@mixin Position($top, $right, $bottom, $left)
+{
+	top: $top;
+	right: $right;
+	bottom: $bottom;
+	left: $left;
+}
+
+@mixin AbsolutePosition($top, $right, $bottom, $left)
+{
+	position: absolute;
+	@include Position($top, $right, $bottom, $left);
+}
+
+@mixin VerticalCenter($right, $left)
+{
+	@include AbsolutePosition(50%, $right, auto, $left);
+	transform: translateY(-50%);
+}
+
+@mixin HorizontalCenter($top, $bottom)
+{
+	@include AbsolutePosition($top, auto, $bottom, 50%);
+	transform: translateX(-50%);
+}
+
+@mixin Center()
+{
+	@include AbsolutePosition(50%, auto, auto, 50%);
+	transform: translate(-50%, -50%);
+}
+
+@mixin Size($width, $height)
+{
+	width: $width;
+	height: $height;
+}
+
+@mixin Area($width, $height, $backgroundColor)
+{
+	@include Size($width, $height);
+	background-color: $backgroundColor;
+}
+
+@mixin BlockMask($backgroundColor, $zIndex)
+{
+	@include Area(100%, 100%, $backgroundColor);
+	@include AbsolutePosition(0px, 0px, 0px, 0px);
+	z-index: $zIndex; 
+}
+
+@mixin Hint($color, $text-decoration, $cursor)
+{
+	&:hover, &:focus
+	{
+		color: $color;
+		text-decoration: $text-decoration;
+		cursor: $cursor;
+	}
+}
+
+@mixin BorderArea($width, $height, $backgroundColor, $borderRadius, $border)
+{
+	@include Area($width, $height, $backgroundColor);
+	border-radius: $borderRadius;
+	border: $border;
+}
+
+@mixin FixedBoxPadding($paddingTop, $paddingRight, $paddingBottom, $paddingLeft)
+{
+	padding-top: $paddingTop;
+	padding-right: $paddingRight;
+	padding-bottom: $paddingBottom;
+	padding-left: $paddingLeft;
+	box-sizing: border-box;
+}
+
+@mixin RowFlex()
+{
+	display: flex;
+	flex-direction: row;
+}

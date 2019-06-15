@@ -1,0 +1,91 @@
+@import "Style";
+
+.Area_EventList
+{
+	@include Area(100%, 322px, #ffffff);
+	@include AbsolutePosition(278px, 0px, auto, 0px);
+	@include FixedBoxPadding(0px, 100px, 0px, 100px);
+	@include RowFlex();
+	
+	.Area_Event 
+	{
+		@include Area(322.4px, 322px, #ffffff);
+		margin-right: 28px;
+		margin-left: 28px;
+		position: relative;
+		box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+	  
+		.Title
+		{
+			@include ProximaNovaFont(22px, #4a4a4a);
+			@include AbsolutePosition(25px, auto, auto, 24px);
+		}
+	  
+		.Day
+		{
+			@include ProximaNovaFont(70px, #b81769);
+			@include AbsolutePosition(70px, auto, auto, 45px);
+		}
+		
+		.Month
+		{
+			@include ProximaNovaFont(27px, #b81769);
+			@include AbsolutePosition(87px, auto, auto, 136px);
+		}
+		
+		.Time 
+		{
+			@include ProximaNovaFont(20px, #757376);
+			@include AbsolutePosition(114px, auto, auto, 138px);
+		}
+		
+		.Area_Address
+		{
+			@include Area(100%, 42.8px, #85c93c);
+			@include AbsolutePosition(160px, auto, auto, auto);
+			
+			.Icon
+			{
+				@include Fontawesome(26px, #ffffff);
+				@include AbsolutePosition(8px, auto, auto, 60px);
+			}
+			
+			.Address
+			{
+				@include ProximaNovaFont(19px, #ffffff);
+				@include VerticalCenter(auto, 92px);
+			}
+		}
+		
+		.Area_Info
+		{
+			@include Area(100%, 120px, #4a4a4a);
+			@include AbsolutePosition(202px, auto, auto, auto);
+			
+			.GuestsCount
+			{
+				@include ProximaNovaFont(23px, #ffffff);
+				@include AbsolutePosition(21px, auto, auto, 52px);
+			}
+			
+			.Label_Guests
+			{
+				@include ProximaNovaFont(18px, #ffffff);
+				@include AbsolutePosition(24px, auto, auto, 103px);
+			}
+			
+			.Icon
+			{
+				@include AbsolutePosition(62px, auto, auto, 55px);
+				@include Fontawesome(23px, #ffffff);
+				@include Hint(#000000, none, pointer);
+			}
+			
+			.Label_Editor
+			{
+				@include ProximaNovaFont(18px, #ffffff);
+				@include AbsolutePosition(64px, auto, auto, 103px);
+			}
+		}
+	}
+}

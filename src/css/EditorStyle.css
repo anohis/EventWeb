@@ -1,0 +1,319 @@
+@font-face {
+  font-family: ProximaNova;
+  src: local("Proxima Nova");
+}
+
+.EditorBackground {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  z-index: 1;
+}
+
+.EditorBackground .Area_Editor {
+  position: absolute;
+  top: 50%;
+  right: auto;
+  bottom: auto;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 670px;
+  height: 516px;
+  background-color: #fafafa;
+}
+
+.EditorBackground .Area_Editor .Area_Head {
+  position: relative;
+  width: 100%;
+  height: 57px;
+  background-color: #b81769;
+}
+
+.EditorBackground .Area_Editor .Area_Head .Label_EditorHead {
+  font-family: ProximaNova;
+  font-size: 24px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center-left;
+  color: #ffffff;
+  position: absolute;
+  top: 50%;
+  right: auto;
+  bottom: auto;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.EditorBackground .Area_Editor .Area_Head .EditorClose {
+  font-family: ProximaNova;
+  font-size: 50px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center-left;
+  color: #ffffff;
+  position: absolute;
+  top: 5px;
+  right: 20px;
+  bottom: auto;
+  left: auto;
+}
+
+.EditorBackground .Area_Editor .Area_Head .EditorClose:hover, .EditorBackground .Area_Editor .Area_Head .EditorClose:focus {
+  color: #000000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.EditorBackground .Area_Editor .EditorLabel, .EditorBackground .Area_Editor .Label_EventTitle, .EditorBackground .Area_Editor .Label_Location, .EditorBackground .Area_Editor .Label_Date {
+  font-family: ProximaNova;
+  font-size: 24px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center-left;
+  color: #a4a4a;
+}
+
+.EditorBackground .Area_Editor .Label_EventTitle {
+  position: absolute;
+  top: 87px;
+  right: auto;
+  bottom: auto;
+  left: 62px;
+}
+
+.EditorBackground .Area_Editor .Label_Location {
+  position: absolute;
+  top: 193px;
+  right: auto;
+  bottom: auto;
+  left: 62px;
+}
+
+.EditorBackground .Area_Editor .Label_Date {
+  position: absolute;
+  top: 297px;
+  right: auto;
+  bottom: auto;
+  left: 62px;
+}
+
+.EditorBackground .Area_Editor .InputField, .EditorBackground .Area_Editor .Input_EventTitle, .EditorBackground .Area_Editor .Input_Location {
+  width: 350px;
+  height: 50px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  border: solid 1px #4a4a4a;
+  font-family: ProximaNova;
+  font-size: 20px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center-left;
+  color: #9b9b9b;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 21px;
+  box-sizing: border-box;
+}
+
+.EditorBackground .Area_Editor .Input_EventTitle {
+  position: absolute;
+  top: 124px;
+  right: auto;
+  bottom: auto;
+  left: 62px;
+}
+
+.EditorBackground .Area_Editor .Input_Location {
+  width: 551.5px;
+  position: absolute;
+  top: 230px;
+  right: auto;
+  bottom: auto;
+  left: 62px;
+}
+
+.EditorBackground .Area_Editor .InputField-Date {
+  width: 350px;
+  height: 50px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  border: solid 1px #4a4a4a;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.EditorBackground .Area_Editor .InputField-Date .Date {
+  width: 80%;
+  height: 100%;
+  background-color: #ffffff;
+  border-radius: 0;
+  border: none;
+  font-family: ProximaNova;
+  font-size: 20px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center-left;
+  color: #9b9b9b;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 21px;
+  box-sizing: border-box;
+}
+
+.EditorBackground .Area_Editor .InputField-Date .Picker {
+  width: 19%;
+  height: 100%;
+  background-color: #ffffff;
+  border-radius: 0;
+  border: none;
+  border-left: solid 1px #4a4a4a;
+  position: relative;
+  display: inline;
+  float: right;
+}
+
+.EditorBackground .Area_Editor .InputField-Date .Picker .Icon {
+  position: absolute;
+  top: 50%;
+  right: auto;
+  bottom: auto;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 23px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center-left;
+  color: #4a4a4a;
+}
+
+.EditorBackground .Area_Editor .InputField-Date .Picker .Icon:hover, .EditorBackground .Area_Editor .InputField-Date .Picker .Icon:focus {
+  color: #000000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.EditorBackground .Area_Editor .Input_Date {
+  width: 350px;
+  height: 50px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  border: solid 1px #4a4a4a;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  box-sizing: border-box;
+  width: 240px;
+  position: absolute;
+  top: 335px;
+  right: auto;
+  bottom: auto;
+  left: 62px;
+}
+
+.EditorBackground .Area_Editor .Input_Date .Date {
+  width: 80%;
+  height: 100%;
+  background-color: #ffffff;
+  border-radius: 0;
+  border: none;
+  font-family: ProximaNova;
+  font-size: 20px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center-left;
+  color: #9b9b9b;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 21px;
+  box-sizing: border-box;
+}
+
+.EditorBackground .Area_Editor .Input_Date .Picker {
+  width: 20%;
+  height: 100%;
+  background-color: transparent;
+  border-radius: 0;
+  border: none;
+  border-left: solid 1px #4a4a4a;
+  position: relative;
+  display: inline;
+  float: right;
+}
+
+.EditorBackground .Area_Editor .Input_Date .Picker .Icon {
+  position: absolute;
+  top: 50%;
+  right: auto;
+  bottom: auto;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 23px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center-left;
+  color: #4a4a4a;
+}
+
+.EditorBackground .Area_Editor .Input_Date .Picker .Icon:hover, .EditorBackground .Area_Editor .Input_Date .Picker .Icon:focus {
+  color: #000000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.EditorBackground .Area_Editor .EditorSave {
+  width: 90px;
+  height: 40px;
+  background-color: #b81769;
+  font-family: ProximaNova;
+  font-size: 21px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center-left;
+  color: #ffffff;
+  position: absolute;
+  top: auto;
+  right: 56.1px;
+  bottom: 38px;
+  left: auto;
+}
